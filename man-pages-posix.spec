@@ -6,7 +6,7 @@
 Summary: POSIX interface documentation
 Name: man-pages-posix
 Version: %{posix_version}%{posix_release}
-Release: 5%{?dist}
+Release: 6%{?dist}
 License: LicenseRef-IEEE-2017
 URL: https://www.kernel.org/doc/man-pages/
 Source: https://www.kernel.org/pub/linux/docs/man-pages/man-pages-posix/%{posix_name_rel}.tar.xz
@@ -42,6 +42,9 @@ make install DESTDIR="$RPM_BUILD_ROOT"
 %{_mandir}/man*/*
 
 %changelog
+* Sun Jul 27 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2017a-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
+
 * Wed Jan 29 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2017a-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
 
